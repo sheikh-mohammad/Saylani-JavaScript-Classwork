@@ -7,3 +7,5 @@ fruits.splice(2, 2, "Grape", "Honeydew");
 fruits.push("Fig", "Grapes");
 
 fruits.pop();
+
+fruits.shift();
