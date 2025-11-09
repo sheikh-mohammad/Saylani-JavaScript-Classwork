@@ -9,3 +9,5 @@ fruits.push("Fig", "Grapes");
 fruits.pop();
 
 fruits.shift();
+
+fruits.unshift("Avocado");
