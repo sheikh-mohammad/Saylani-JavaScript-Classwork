@@ -12,4 +12,4 @@ fruits.shift();
 
 fruits.unshift("Avocado");
 
-console.log(fruits.indexOf("Honeydew");)
+console.log(fruits.indexOf("Honeydew"));
