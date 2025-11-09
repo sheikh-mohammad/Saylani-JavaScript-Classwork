@@ -11,3 +11,5 @@ fruits.pop();
 fruits.shift();
 
 fruits.unshift("Avocado");
+
+console.log(fruits.indexOf("Honeydew");)
