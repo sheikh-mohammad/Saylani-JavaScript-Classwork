@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+  </head>
+
+  <body>
+    <img src="images/0.jpg" width="600px" height="600px" alt="" id="image" />
+    <br />
+    <button onclick="previous()">Previous</button>
+    <button onclick="next()">Next</button>
+    <script>
+      let images = [
+        "images/0.jpg",
+        "images/1.jpg",
+        "images/2.jpg",
+        "images/3.jpg",
+      ];
+
+      let img = document.getElementById("image");
+
+      let index = 0;
+
+      function next() {
+        index++;
+        let imgSrc = img.src;
+        if (index > images.length - 1) {
+          index = 0;
+        }
+        img.src = `images/${index}.jpg`;
+      }
+
+      function previous() {
+        let imgSrc = img.src;
+        index--;
+        if (index < 0) {
+          index = images.length - 1;
+        }
+        img.src = `images/${index}.jpg`;
+      }
+    </script>
+  </body>
+</html>
