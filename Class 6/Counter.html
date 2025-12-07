@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+
+    <h2 id="show">0</h2>
+
+    <button onclick="control('incre')">Increment</button>
+
+    <button onclick="control('decre')">Decrement</button>
+
+    <button onclick="control('reset')">Reset</button>
+
+    <script>
+      let show = document.getElementById("show");
+      let index = 0;
+
+      function control(action) {
+        if (action == "incre") {
+          index++;
+        } else if (action == "decre") {
+          index--;
+          if (index < 0) {
+            index = 0;
+          }
+        } else if (action == "reset") {
+          index = 0;
+        }
+        show.innerText = index;
+      }
+    </script>
+  </body>
+</html>
